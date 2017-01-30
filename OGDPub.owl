@@ -1,0 +1,577 @@
+Prefix(:=<http://www.semanticweb.org/larii/ontologies/2017/0/OGDPub>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/larii/ontologies/2017/0/OGDPub>
+
+Declaration(Class(<http://purl.org/dc/terms/FileFormat>))
+Declaration(Class(<http://purl.org/dc/terms/LicenseDocument>))
+Declaration(Class(:Idioma))
+Declaration(Class(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme>))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2008/05/skos#Concept>))
+Declaration(Class(<http://www.w3.org/ns/dcat#Catalog>))
+Declaration(Class(<http://www.w3.org/ns/dcat#Dataset>))
+Declaration(Class(<http://www.w3.org/ns/dcat#Distribution>))
+Declaration(Class(<http://www.w3.org/ns/org#Membership>))
+Declaration(Class(<http://www.w3.org/ns/org#Organization>))
+Declaration(Class(<http://www.w3.org/ns/org#OrganizationalUnit>))
+Declaration(Class(<http://www.w3.org/ns/org#Role>))
+Declaration(Class(<http://www.w3.org/ns/org#Site>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Agent>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+Declaration(ObjectProperty(<http://purl.org/dc/terms/creator>))
+Declaration(ObjectProperty(<http://purl.org/dc/terms/format>))
+Declaration(ObjectProperty(<http://purl.org/dc/terms/language>))
+Declaration(ObjectProperty(<http://purl.org/dc/terms/publisher>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasOrganizationalUnit>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasSubOrganizationalUnit>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#license>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnit>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnitOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#publishedIn>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#subOrganizationalUnitOf>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/dcat#accessURL>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/dcat#dataset>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/dcat#distribution>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/dcat#downloadURL>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/dcat#landingPage>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/dcat#theme>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/org#hasMember>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/org#hasMembership>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/org#hasSite>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/org#member>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/org#memberDuring>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/org#memberOf>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/org#role>))
+Declaration(ObjectProperty(<http://www.w3.org/ns/org#siteOf>))
+Declaration(ObjectProperty(<http://xmlns.com/foaf/0.1/Page>))
+Declaration(DataProperty(<http://purl.org/dc/terms/available>))
+Declaration(DataProperty(<http://purl.org/dc/terms/created>))
+Declaration(DataProperty(<http://purl.org/dc/terms/date>))
+Declaration(DataProperty(<http://purl.org/dc/terms/dateAccepted>))
+Declaration(DataProperty(<http://purl.org/dc/terms/dateCopyrighted>))
+Declaration(DataProperty(<http://purl.org/dc/terms/dateSubmitted>))
+Declaration(DataProperty(<http://purl.org/dc/terms/description>))
+Declaration(DataProperty(<http://purl.org/dc/terms/issued>))
+Declaration(DataProperty(<http://purl.org/dc/terms/modified>))
+Declaration(DataProperty(<http://purl.org/dc/terms/title>))
+Declaration(DataProperty(<http://purl.org/dc/terms/valid>))
+Declaration(DataProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#mbox>))
+Declaration(DataProperty(<http://www.w3.org/ns/dcat#byteSize>))
+Declaration(DataProperty(<http://www.w3.org/ns/dcat#keyword>))
+Declaration(DataProperty(<http://www.w3.org/ns/org#identifier>))
+Declaration(DataProperty(<http://xmlns.com/foaf/0.1/name>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#AdministracaoPublica>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Agricultura>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#CienciaTecnologia>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#CulturaEsporteLazer>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Demografia>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Economia>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Educacao>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Financas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#IndustriaComercioServicos>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#InfraestruturaPlanejamentoUrbano>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Legislacao>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#RecursosNaturaisMeioAmbiente>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Saude>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#SegurancaPublica>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#SociedadeBemEstar>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#TransporteMobilidade>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Turismo>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+Declaration(AnnotationProperty(<http://www.w3.org/2008/05/skos#definition>))
+Declaration(AnnotationProperty(<http://www.w3.org/2008/05/skos#prefLabel>))
+Declaration(Datatype(<http://purl.org/dc/terms/Box>))
+Declaration(Datatype(<http://purl.org/dc/terms/ISO3166>))
+Declaration(Datatype(<http://purl.org/dc/terms/ISO639-2>))
+Declaration(Datatype(<http://purl.org/dc/terms/ISO639-3>))
+Declaration(Datatype(<http://purl.org/dc/terms/Period>))
+Declaration(Datatype(<http://purl.org/dc/terms/Point>))
+Declaration(Datatype(<http://purl.org/dc/terms/RFC1766>))
+Declaration(Datatype(<http://purl.org/dc/terms/RFC3066>))
+Declaration(Datatype(<http://purl.org/dc/terms/RFC4646>))
+Declaration(Datatype(<http://purl.org/dc/terms/RFC5646>))
+Declaration(Datatype(<http://purl.org/dc/terms/URI>))
+Declaration(Datatype(<http://purl.org/dc/terms/W3CDTF>))
+Declaration(Datatype(xsd:date))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://www.w3.org/2008/05/skos#prefLabel> (<http://www.w3.org/2008/05/skos#prefLabel>)
+
+SubAnnotationPropertyOf(<http://www.w3.org/2008/05/skos#prefLabel> rdfs:label)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.org/dc/terms/creator> (<http://purl.org/dc/terms/creator>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/creator> "Organizational unit from which the dataset is derived."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/creator> "Unidade Organizacional da qual provém o conjunto de dados."@pt)
+FunctionalObjectProperty(<http://purl.org/dc/terms/creator>)
+ObjectPropertyDomain(<http://purl.org/dc/terms/creator> <http://www.w3.org/ns/dcat#Dataset>)
+ObjectPropertyRange(<http://purl.org/dc/terms/creator> <http://www.w3.org/ns/org#OrganizationalUnit>)
+
+# Object Property: <http://purl.org/dc/terms/format> (<http://purl.org/dc/terms/format>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/format> "O formato de arquivo da distribuição."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/format> "The file format of a distribution."@en)
+SubObjectPropertyOf(<http://purl.org/dc/terms/format> owl:topObjectProperty)
+FunctionalObjectProperty(<http://purl.org/dc/terms/format>)
+ObjectPropertyDomain(<http://purl.org/dc/terms/format> <http://www.w3.org/ns/dcat#Distribution>)
+ObjectPropertyRange(<http://purl.org/dc/terms/format> <http://purl.org/dc/terms/FileFormat>)
+
+# Object Property: <http://purl.org/dc/terms/language> (<http://purl.org/dc/terms/language>)
+
+SubObjectPropertyOf(<http://purl.org/dc/terms/language> owl:topObjectProperty)
+ObjectPropertyDomain(<http://purl.org/dc/terms/language> <http://www.w3.org/ns/dcat#Dataset>)
+ObjectPropertyRange(<http://purl.org/dc/terms/language> :Idioma)
+
+# Object Property: <http://purl.org/dc/terms/publisher> (<http://purl.org/dc/terms/publisher>)
+
+SubObjectPropertyOf(<http://purl.org/dc/terms/publisher> owl:topObjectProperty)
+FunctionalObjectProperty(<http://purl.org/dc/terms/publisher>)
+ObjectPropertyDomain(<http://purl.org/dc/terms/publisher> <http://www.w3.org/ns/dcat#Dataset>)
+ObjectPropertyRange(<http://purl.org/dc/terms/publisher> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Object Property: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasOrganizationalUnit> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasOrganizationalUnit>)
+
+InverseObjectProperties(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasOrganizationalUnit> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnitOf>)
+InverseFunctionalObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasOrganizationalUnit>)
+ObjectPropertyDomain(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasOrganizationalUnit> <http://www.w3.org/ns/org#Organization>)
+ObjectPropertyRange(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasOrganizationalUnit> <http://www.w3.org/ns/org#OrganizationalUnit>)
+
+# Object Property: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasSubOrganizationalUnit> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasSubOrganizationalUnit>)
+
+InverseObjectProperties(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasSubOrganizationalUnit> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#subOrganizationalUnitOf>)
+InverseFunctionalObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasSubOrganizationalUnit>)
+ObjectPropertyDomain(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasSubOrganizationalUnit> <http://www.w3.org/ns/org#OrganizationalUnit>)
+ObjectPropertyRange(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#hasSubOrganizationalUnit> <http://www.w3.org/ns/org#OrganizationalUnit>)
+
+# Object Property: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#license> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#license>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#license> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#license> <http://www.w3.org/ns/dcat#Distribution>)
+ObjectPropertyRange(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#license> <http://purl.org/dc/terms/LicenseDocument>)
+
+# Object Property: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnit> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnit>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnit> <http://www.w3.org/ns/org#Membership>)
+ObjectPropertyRange(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnit> <http://www.w3.org/ns/org#OrganizationalUnit>)
+
+# Object Property: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnitOf> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnitOf>)
+
+FunctionalObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnitOf>)
+ObjectPropertyDomain(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnitOf> <http://www.w3.org/ns/org#OrganizationalUnit>)
+ObjectPropertyRange(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#organizationalUnitOf> <http://www.w3.org/ns/org#Organization>)
+
+# Object Property: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#publishedIn> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#publishedIn>)
+
+FunctionalObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#publishedIn>)
+ObjectPropertyDomain(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#publishedIn> <http://www.w3.org/ns/dcat#Dataset>)
+ObjectPropertyRange(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#publishedIn> <http://www.w3.org/ns/org#Site>)
+
+# Object Property: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#subOrganizationalUnitOf> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#subOrganizationalUnitOf>)
+
+FunctionalObjectProperty(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#subOrganizationalUnitOf>)
+ObjectPropertyDomain(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#subOrganizationalUnitOf> <http://www.w3.org/ns/org#OrganizationalUnit>)
+ObjectPropertyRange(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#subOrganizationalUnitOf> <http://www.w3.org/ns/org#OrganizationalUnit>)
+
+# Object Property: <http://www.w3.org/ns/dcat#accessURL> (<http://www.w3.org/ns/dcat#accessURL>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#accessURL> "A landing page, feed, SPARQL endpoint or other type of resource that gives access to the distribution of the dataset"@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#accessURL> "Uma página de destino, feed, endpoint SPARQL ou outro tipo de recurso que dá acesso à distribuição do conjunto de dados"@pt)
+FunctionalObjectProperty(<http://www.w3.org/ns/dcat#accessURL>)
+ObjectPropertyDomain(<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/ns/dcat#Distribution>)
+ObjectPropertyRange(<http://www.w3.org/ns/dcat#accessURL> rdfs:Resource)
+
+# Object Property: <http://www.w3.org/ns/dcat#dataset> (<http://www.w3.org/ns/dcat#dataset>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#dataset> "A dataset that is part of the catalog."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#dataset> "Um dataset que faz parte do catálogo de dados."@pt)
+ObjectPropertyDomain(<http://www.w3.org/ns/dcat#dataset> <http://www.w3.org/ns/dcat#Catalog>)
+ObjectPropertyRange(<http://www.w3.org/ns/dcat#dataset> <http://www.w3.org/ns/dcat#Dataset>)
+
+# Object Property: <http://www.w3.org/ns/dcat#distribution> (<http://www.w3.org/ns/dcat#distribution>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#distribution> "Conecta um conjunto de dados às suas distribuições disponíveis."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#distribution> "Connects a dataset to its available distributions."@en)
+ObjectPropertyDomain(<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/ns/dcat#Dataset>)
+ObjectPropertyRange(<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/ns/dcat#Distribution>)
+
+# Object Property: <http://www.w3.org/ns/dcat#downloadURL> (<http://www.w3.org/ns/dcat#downloadURL>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#downloadURL> "A file that contains the distribution of the dataset in a given format"@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#downloadURL> "Um arquivo que contém a distribuição do conjunto de dados em um determinado formato."@pt)
+FunctionalObjectProperty(<http://www.w3.org/ns/dcat#downloadURL>)
+ObjectPropertyDomain(<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/ns/dcat#Distribution>)
+ObjectPropertyRange(<http://www.w3.org/ns/dcat#downloadURL> rdfs:Resource)
+
+# Object Property: <http://www.w3.org/ns/dcat#landingPage> (<http://www.w3.org/ns/dcat#landingPage>)
+
+SubObjectPropertyOf(<http://www.w3.org/ns/dcat#landingPage> <http://xmlns.com/foaf/0.1/Page>)
+
+# Object Property: <http://www.w3.org/ns/dcat#theme> (<http://www.w3.org/ns/dcat#theme>)
+
+SubObjectPropertyOf(<http://www.w3.org/ns/dcat#theme> owl:topObjectProperty)
+FunctionalObjectProperty(<http://www.w3.org/ns/dcat#theme>)
+ObjectPropertyDomain(<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/ns/dcat#Dataset>)
+ObjectPropertyRange(<http://www.w3.org/ns/dcat#theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme>)
+
+# Object Property: <http://www.w3.org/ns/org#hasMember> (<http://www.w3.org/ns/org#hasMember>)
+
+InverseObjectProperties(<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/ns/org#memberOf>)
+InverseFunctionalObjectProperty(<http://www.w3.org/ns/org#hasMember>)
+ObjectPropertyDomain(<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/ns/org#Organization>)
+ObjectPropertyRange(<http://www.w3.org/ns/org#hasMember> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Object Property: <http://www.w3.org/ns/org#hasMembership> (<http://www.w3.org/ns/org#hasMembership>)
+
+InverseObjectProperties(<http://www.w3.org/ns/org#hasMembership> <http://www.w3.org/ns/org#member>)
+ObjectPropertyDomain(<http://www.w3.org/ns/org#hasMembership> <http://xmlns.com/foaf/0.1/Agent>)
+ObjectPropertyRange(<http://www.w3.org/ns/org#hasMembership> <http://www.w3.org/ns/org#Membership>)
+
+# Object Property: <http://www.w3.org/ns/org#hasSite> (<http://www.w3.org/ns/org#hasSite>)
+
+InverseObjectProperties(<http://www.w3.org/ns/org#hasSite> <http://www.w3.org/ns/org#siteOf>)
+FunctionalObjectProperty(<http://www.w3.org/ns/org#hasSite>)
+ObjectPropertyDomain(<http://www.w3.org/ns/org#hasSite> <http://www.w3.org/ns/org#Organization>)
+ObjectPropertyRange(<http://www.w3.org/ns/org#hasSite> <http://www.w3.org/ns/org#Site>)
+
+# Object Property: <http://www.w3.org/ns/org#member> (<http://www.w3.org/ns/org#member>)
+
+ObjectPropertyDomain(<http://www.w3.org/ns/org#member> <http://www.w3.org/ns/org#Membership>)
+ObjectPropertyRange(<http://www.w3.org/ns/org#member> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Object Property: <http://www.w3.org/ns/org#memberDuring> (<http://www.w3.org/ns/org#memberDuring>)
+
+ObjectPropertyDomain(<http://www.w3.org/ns/org#memberDuring> <http://www.w3.org/ns/org#Membership>)
+
+# Object Property: <http://www.w3.org/ns/org#memberOf> (<http://www.w3.org/ns/org#memberOf>)
+
+FunctionalObjectProperty(<http://www.w3.org/ns/org#memberOf>)
+ObjectPropertyDomain(<http://www.w3.org/ns/org#memberOf> <http://xmlns.com/foaf/0.1/Agent>)
+ObjectPropertyRange(<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/ns/org#Organization>)
+
+# Object Property: <http://www.w3.org/ns/org#role> (<http://www.w3.org/ns/org#role>)
+
+ObjectPropertyDomain(<http://www.w3.org/ns/org#role> <http://www.w3.org/ns/org#Membership>)
+ObjectPropertyRange(<http://www.w3.org/ns/org#role> <http://www.w3.org/ns/org#Role>)
+
+# Object Property: <http://www.w3.org/ns/org#siteOf> (<http://www.w3.org/ns/org#siteOf>)
+
+FunctionalObjectProperty(<http://www.w3.org/ns/org#siteOf>)
+InverseFunctionalObjectProperty(<http://www.w3.org/ns/org#siteOf>)
+ObjectPropertyDomain(<http://www.w3.org/ns/org#siteOf> <http://www.w3.org/ns/org#Site>)
+ObjectPropertyRange(<http://www.w3.org/ns/org#siteOf> <http://www.w3.org/ns/org#Organization>)
+
+# Object Property: <http://xmlns.com/foaf/0.1/Page> (<http://xmlns.com/foaf/0.1/Page>)
+
+FunctionalObjectProperty(<http://xmlns.com/foaf/0.1/Page>)
+ObjectPropertyDomain(<http://xmlns.com/foaf/0.1/Page> <http://www.w3.org/ns/dcat#Dataset>)
+ObjectPropertyRange(<http://xmlns.com/foaf/0.1/Page> rdfs:Resource)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://purl.org/dc/terms/available> (<http://purl.org/dc/terms/available>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/available> "Data em que um recurso de tornou disponível."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/available> "Date when a resource became available."@en)
+SubDataPropertyOf(<http://purl.org/dc/terms/available> <http://purl.org/dc/terms/date>)
+FunctionalDataProperty(<http://purl.org/dc/terms/available>)
+DataPropertyRange(<http://purl.org/dc/terms/available> rdfs:Literal)
+
+# Data Property: <http://purl.org/dc/terms/created> (<http://purl.org/dc/terms/created>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/created> "Data em que um recurso foi criado."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/created> "Date when a resource was created."@en)
+SubDataPropertyOf(<http://purl.org/dc/terms/created> <http://purl.org/dc/terms/date>)
+FunctionalDataProperty(<http://purl.org/dc/terms/created>)
+DataPropertyRange(<http://purl.org/dc/terms/created> rdfs:Literal)
+
+# Data Property: <http://purl.org/dc/terms/date> (<http://purl.org/dc/terms/date>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/date> "A point or period of time associated with an event in the lifecycle of the resource."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/date> "Um ponto ou período de tempo associado a um evento no ciclo de vida do recurso."@pt)
+DataPropertyRange(<http://purl.org/dc/terms/date> rdfs:Literal)
+
+# Data Property: <http://purl.org/dc/terms/dateAccepted> (<http://purl.org/dc/terms/dateAccepted>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/dateAccepted> "Data de aceitação de um recurso."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/dateAccepted> "Date of acceptance of the resource."@en)
+SubDataPropertyOf(<http://purl.org/dc/terms/dateAccepted> <http://purl.org/dc/terms/date>)
+FunctionalDataProperty(<http://purl.org/dc/terms/dateAccepted>)
+DataPropertyRange(<http://purl.org/dc/terms/dateAccepted> rdfs:Literal)
+
+# Data Property: <http://purl.org/dc/terms/dateCopyrighted> (<http://purl.org/dc/terms/dateCopyrighted>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/dateCopyrighted> "Date of copyright."@en)
+SubDataPropertyOf(<http://purl.org/dc/terms/dateCopyrighted> <http://purl.org/dc/terms/date>)
+FunctionalDataProperty(<http://purl.org/dc/terms/dateCopyrighted>)
+DataPropertyRange(<http://purl.org/dc/terms/dateCopyrighted> rdfs:Literal)
+
+# Data Property: <http://purl.org/dc/terms/dateSubmitted> (<http://purl.org/dc/terms/dateSubmitted>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/dateSubmitted> "Data de submissão de um recurso."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/dateSubmitted> "Date of submission of the resource."@en)
+SubDataPropertyOf(<http://purl.org/dc/terms/dateSubmitted> <http://purl.org/dc/terms/date>)
+FunctionalDataProperty(<http://purl.org/dc/terms/dateSubmitted>)
+DataPropertyRange(<http://purl.org/dc/terms/dateSubmitted> rdfs:Literal)
+
+# Data Property: <http://purl.org/dc/terms/issued> (<http://purl.org/dc/terms/issued>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/issued> "Data em que um recurso foi publicado."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/issued> "Data when a resource was published."@en)
+SubDataPropertyOf(<http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/date>)
+FunctionalDataProperty(<http://purl.org/dc/terms/issued>)
+DataPropertyRange(<http://purl.org/dc/terms/issued> rdfs:Literal)
+
+# Data Property: <http://purl.org/dc/terms/modified> (<http://purl.org/dc/terms/modified>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/modified> "Data em que um recurso foi modificado."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/modified> "Date when a resource whas modified."@en)
+SubDataPropertyOf(<http://purl.org/dc/terms/modified> <http://purl.org/dc/terms/date>)
+FunctionalDataProperty(<http://purl.org/dc/terms/modified>)
+DataPropertyRange(<http://purl.org/dc/terms/modified> rdfs:Literal)
+
+# Data Property: <http://purl.org/dc/terms/title> (<http://purl.org/dc/terms/title>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/title> "A name given to the resource."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/title> "Um nome dado para um recurso."@pt)
+DataPropertyRange(<http://purl.org/dc/terms/title> xsd:string)
+
+# Data Property: <http://purl.org/dc/terms/valid> (<http://purl.org/dc/terms/valid>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/valid> "Data em que um recurso foi validado."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/valid> "Date when a resource was validated."@en)
+SubDataPropertyOf(<http://purl.org/dc/terms/valid> <http://purl.org/dc/terms/date>)
+FunctionalDataProperty(<http://purl.org/dc/terms/valid>)
+DataPropertyRange(<http://purl.org/dc/terms/valid> rdfs:Literal)
+
+# Data Property: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#mbox> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#mbox>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#mbox> "A public agent e-mail."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#mbox> "E-mail de um agente público."@pt)
+DataPropertyDomain(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#mbox> <http://xmlns.com/foaf/0.1/Agent>)
+DataPropertyRange(<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#mbox> rdfs:Literal)
+
+# Data Property: <http://www.w3.org/ns/dcat#byteSize> (<http://www.w3.org/ns/dcat#byteSize>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#byteSize> "O tamanho de uma distribuição em bytes."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#byteSize> "Size of a distribution in bytes."@en)
+DataPropertyDomain(<http://www.w3.org/ns/dcat#byteSize> <http://www.w3.org/ns/dcat#Distribution>)
+DataPropertyRange(<http://www.w3.org/ns/dcat#byteSize> rdfs:Literal)
+
+# Data Property: <http://www.w3.org/ns/dcat#keyword> (<http://www.w3.org/ns/dcat#keyword>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#keyword> "Um palavra-chave ou tag que descreve o conjunto de dados."@pt)
+DataPropertyDomain(<http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/ns/dcat#Dataset>)
+DataPropertyRange(<http://www.w3.org/ns/dcat#keyword> rdfs:Literal)
+
+# Data Property: <http://www.w3.org/ns/org#identifier> (<http://www.w3.org/ns/org#identifier>)
+
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/org#identifier> "Código identificador de um município, unidade organizacional ou dataset."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/org#identifier> "Identifying code of a municipality, an organizational unit or a dataset.")
+SubDataPropertyOf(<http://www.w3.org/ns/org#identifier> owl:topDataProperty)
+DataPropertyRange(<http://www.w3.org/ns/org#identifier> xsd:long)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/dc/terms/FileFormat> (dcterms:FileFormat)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/FileFormat> "dcterms:FileFormat"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/FileFormat> "dcterms:FormatoDeArquivo"@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/FileFormat> "A digital resource format."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/FileFormat> "Um formato de recurso digital."@pt)
+
+# Class: <http://purl.org/dc/terms/LicenseDocument> (dcterms:LicenseDocument)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/LicenseDocument> "dcterms:Licensa"@pt)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/LicenseDocument> "dcterms:LicenseDocument"@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/LicenseDocument> "A legal document giving official permission to do something with a Resource."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://purl.org/dc/terms/LicenseDocument> "Um documento legal dando permissão oficial para fazer algo com algum recurso."@pt)
+
+# Class: :Idioma (ogdpub:Idioma)
+
+AnnotationAssertion(rdfs:label :Idioma "ogdpub:Idioma"@pt)
+AnnotationAssertion(rdfs:label :Idioma "ogdpub:Language"@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> :Idioma "Língua própria em que o recurso foi disponibilizado."@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> :Idioma "Own language in which the resource was made available."@en)
+
+# Class: <http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> (ogdpub:Theme)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> "ogdpub:Tema"@pt)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> "ogdpub:Theme"@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> "A theme is a possible classification for datasets."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> "Um tema é uma possível classificação para conjuntos de dados."@pt)
+EquivalentClasses(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.w3.org/2008/05/skos#Concept>)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+AnnotationAssertion(rdfs:label rdfs:Resource "rdfs:Recurso"@pt)
+AnnotationAssertion(rdfs:label rdfs:Resource "rdfs:Resource"@en)
+
+# Class: <http://www.w3.org/2008/05/skos#Concept> (skos:Concept)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/2008/05/skos#Concept> "skos:Conceito"@pt)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2008/05/skos#Concept> "skos:Concept"@en)
+
+# Class: <http://www.w3.org/ns/dcat#Catalog> (dcat:Catalog)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/dcat#Catalog> "dcat:Catalog"@en)
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/dcat#Catalog> "dcat:Catalogo"@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#Catalog> "A data catalog is a curated collection of metadata about datasets."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#Catalog> "Um catálogo de dados é uma coleção de metadados sobre conjuntos de dados."@pt)
+EquivalentClasses(<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/ns/org#Site>)
+
+# Class: <http://www.w3.org/ns/dcat#Dataset> (dcat:Dataset)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/dcat#Dataset> "dcat:ConjuntoDeDados"@pt)
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/dcat#Dataset> "dcat:Dataset"@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#Dataset> "A collection of data, published or curated by a single agent, and available for access or download in one or more formats."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#Dataset> "Um conjunto de dados, publicado por um único agente, e disponível para download em um ou mais formatos."@pt)
+
+# Class: <http://www.w3.org/ns/dcat#Distribution> (dcat:Distribuicao)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/dcat#Distribution> "dcat:Distribuicao"@pt)
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/dcat#Distribution> "dcat:Distribution"@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#Distribution> "Representa uma forma específica de disponibilização de um conjunto de dados. Cada conjunto de dados pode estar disponível em diferentes formas, estas formas podem representar diferentes formatos de conjunto de dados ou diferentes endpoints. Exemplos de distribuições: um arquivo CSV para download, uma API ou um RSS feed,"@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/dcat#Distribution> "Represents a specific available form of a dataset. Each dataset might be available in different forms, these forms might represent different formats of the dataset or different endpoints. Examples of distributions include a downloadable CSV file, an API or an RSS feed"@en)
+
+# Class: <http://www.w3.org/ns/org#Membership> (org:AgenteAssociado)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/org#Membership> "org:AgenteAssociado"@pt)
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/org#Membership> "org:Membership"@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/org#Membership> "Representa uma relação n-ária entre um Agente, uma Organização e uma Função."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/org#Membership> "Represents an n-ary relationship between an Agent, an Organization and a Role."@en)
+DisjointClasses(<http://www.w3.org/ns/org#Membership> <http://www.w3.org/ns/org#Role>)
+
+# Class: <http://www.w3.org/ns/org#Organization> (org:Municipio)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/org#Organization> "org:Municipio"@pt)
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/org#Organization> "org:Organization"@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/org#Organization> "Administrative district within a state, governed by a mayor and a city council."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/org#Organization> "Circunscrição administrativa dentro de um Estado, governada por um prefeito e uma câmara de vereadores."@pt)
+DisjointClasses(<http://www.w3.org/ns/org#Organization> <http://www.w3.org/ns/org#OrganizationalUnit>)
+
+# Class: <http://www.w3.org/ns/org#OrganizationalUnit> (org:OrganizationalUnit)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/org#OrganizationalUnit> "org:OrganizationalUnit"@en)
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/org#OrganizationalUnit> "org:UnidadeOrganizacional"@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/org#OrganizationalUnit> "An administrative division."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/org#OrganizationalUnit> "Uma repartição administrativa."@pt)
+
+# Class: <http://www.w3.org/ns/org#Role> (org:Papel)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/org#Role> "org:Papel"@pt)
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/org#Role> "org:Role"@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/org#Role> "A function performed by a person."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/ns/org#Role> "Uma função desempenhada por uma pessoa."@pt)
+
+# Class: <http://www.w3.org/ns/org#Site> (org:Site)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/org#Site> "org:Site"@en)
+
+# Class: <http://xmlns.com/foaf/0.1/Agent> (foaf:Agent)
+
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/Agent> "foaf:Agent"@en)
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/Agent> "foaf:AgentePublico"@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://xmlns.com/foaf/0.1/Agent> "A person who works for the municipality."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://xmlns.com/foaf/0.1/Agent> "Uma pessoa que trabalha para o município."@pt)
+SubClassOf(<http://xmlns.com/foaf/0.1/Agent> <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (foaf:Pessoa)
+
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/Person> "foaf:Person"@en)
+AnnotationAssertion(rdfs:label <http://xmlns.com/foaf/0.1/Person> "foaf:Pessoa"@pt)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://xmlns.com/foaf/0.1/Person> "An individual."@en)
+AnnotationAssertion(<http://www.w3.org/2008/05/skos#definition> <http://xmlns.com/foaf/0.1/Person> "Um indivíduo."@pt)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#AdministracaoPublica> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#AdministracaoPublica>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#AdministracaoPublica>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Agricultura> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Agricultura>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Agricultura>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#CienciaTecnologia> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#CienciaTecnologia>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#CienciaTecnologia>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#CulturaEsporteLazer> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#CulturaEsporteLazer>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#CulturaEsporteLazer>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Demografia> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Demografia>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Demografia>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Economia> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Economia>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Economia>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Educacao> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Educacao>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Educacao>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Financas> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Financas>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Financas>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#IndustriaComercioServicos> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#IndustriaComercioServicos>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#IndustriaComercioServicos>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#InfraestruturaPlanejamentoUrbano> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#InfraestruturaPlanejamentoUrbano>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#InfraestruturaPlanejamentoUrbano>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Legislacao> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Legislacao>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Legislacao>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#RecursosNaturaisMeioAmbiente> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#RecursosNaturaisMeioAmbiente>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#RecursosNaturaisMeioAmbiente>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Saude> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Saude>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Saude>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#SegurancaPublica> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#SegurancaPublica>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#SegurancaPublica>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#SociedadeBemEstar> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#SociedadeBemEstar>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#SociedadeBemEstar>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#TransporteMobilidade> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#TransporteMobilidade>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#TransporteMobilidade>)
+
+# Individual: <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Turismo> (<http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Turismo>)
+
+ClassAssertion(<http://www.semanticweb.org/larissa/ontologies/2017/0/ogdpubteste#Theme> <http://www.semanticweb.org/larissa/ontologies/2017/0/OGDPub#Turismo>)
+)
